@@ -4,6 +4,7 @@
 apt-get install -y aptitude
 aptitude install zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+chsh -s `which zsh`
 
 # Tools
 aptitude install -y gdebi
