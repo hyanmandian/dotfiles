@@ -12,11 +12,11 @@ aptitude install -y filezilla
 
 # Browsers
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-gdebi google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
 
 # Development
-curl -o vscode.deb -L http://go.microsoft.com/fwlink/?LinkID=760868
-gdebi vscode.deb
+wget http://go.microsoft.com/fwlink/?LinkID=760868 -O vscode.deb 
+dpkg -i vscode.deb
 
 # Node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
