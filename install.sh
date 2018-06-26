@@ -11,7 +11,7 @@ chsh -s `which zsh`
 aptitude install -y filezilla
 
 # Browsers
-curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 gdebi google-chrome-stable_current_amd64.deb
 
 # Development
