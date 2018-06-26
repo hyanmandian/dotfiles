@@ -8,7 +8,6 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 chsh -s `which zsh`
 
 # Tools
-aptitude install -y gdebi
 aptitude install -y filezilla
 
 # Browsers
