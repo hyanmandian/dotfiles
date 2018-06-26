@@ -16,8 +16,8 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 
 # Development
-wget http://go.microsoft.com/fwlink/?LinkID=760868 -O vscode.deb 
-dpkg -i vscode.deb
+snap install vscode --classic
+snap install intellij-idea-community --classic
 
 # Node
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
