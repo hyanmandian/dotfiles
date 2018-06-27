@@ -18,6 +18,7 @@ dpkg -i google-chrome-stable_current_amd64.deb
 # Development
 snap install vscode --classic
 snap install intellij-idea-community --classic
+snap install spotify
 
 # Node
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
