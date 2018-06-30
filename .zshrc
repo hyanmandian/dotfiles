@@ -1,5 +1,7 @@
-# Oh my zsh
-export ZSH="/home/hyanmandian/.oh-my-zsh"
+# Variables
+export ZSH="$HOME/.oh-my-zsh"
+export CODE="$HOME/Code"
+export DOTFILES="$CODE/dotfiles"
 
 # Theme
 ZSH_THEME="robbyrussell"
@@ -11,6 +13,6 @@ plugins=(
 
 # Configs
 source $ZSH/oh-my-zsh.sh
-
-[[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
-[[ -f ~/.zsh/sdkman.zsh ]] && source ~/.zsh/sdkman.zsh
+source $DOTFILES/.zsh/nvm.zsh
+source $DOTFILES/.zsh/sdkman.zsh
+source $DOTFILES/.zsh/aliases.zsh
