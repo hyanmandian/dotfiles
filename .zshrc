@@ -13,6 +13,6 @@ plugins=(
 
 # Configs
 source $ZSH/oh-my-zsh.sh
-source $DOTFILES/.zsh/nvm.zsh
-source $DOTFILES/.zsh/sdkman.zsh
-source $DOTFILES/.zsh/aliases.zsh
+source $DOTFILES/zsh/nvm.zsh
+source $DOTFILES/zsh/sdkman.zsh
+source $DOTFILES/zsh/aliases.zsh
