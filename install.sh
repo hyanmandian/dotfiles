@@ -12,6 +12,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 snap install vscode --classic
 snap install intellij-idea-community --classic
 snap install chromium
+snap install heroku --classic
 snap install postman
 
 wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz_5.0.0-beta.18_amd64.deb -O franz.deb
