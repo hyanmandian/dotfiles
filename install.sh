@@ -1,17 +1,32 @@
+sudo su -
+
 # Setup
+
+## Player
 sh -c "echo 'deb http://download.opensuse.org/repositories/home:/ColinDuquesnoy/xUbuntu_17.10/ /' > /etc/apt/sources.list.d/mellowplayer.list"
 wget -nv https://download.opensuse.org/repositories/home:ColinDuquesnoy/xUbuntu_17.10/Release.key -O Release.key
 apt-key add - < Release.key
 rm Release.key
+
+## Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+apt-key fingerprint 0EBFCD88
+add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
 apt-get update
 apt-get install -y aptitude
-aptitude install -y git mellowplayer curl zsh filezilla gconf2 gconf-service libappindicator1
+aptitude install -y git mellowplayer docker-ce curl zsh filezilla gconf2 gconf-service libappindicator1 apt-transport-https ca-certificates software-properties-common
+
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" && chsh -s `which zsh`
 
 # Apps
 snap install vscode --classic
 snap install intellij-idea-community --classic
 snap install chromium
+snap install heroku --classic
 snap install postman
 
 wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz_5.0.0-beta.18_amd64.deb -O franz.deb
