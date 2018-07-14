@@ -17,3 +17,4 @@ source $DOTFILES/zsh/nvm.zsh
 source $DOTFILES/zsh/sdkman.zsh
 source $DOTFILES/zsh/aliases.zsh
 source $DOTFILES/zsh/yarn.zsh
+source $DOTFILES/zsh/rvm.zsh
