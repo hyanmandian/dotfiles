@@ -16,6 +16,9 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
+curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-Linux-x86_64 -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
 apt-get update
 apt-get install -y aptitude
 aptitude install -y git mellowplayer docker-ce curl zsh filezilla gconf2 gconf-service libappindicator1 apt-transport-https ca-certificates software-properties-common
