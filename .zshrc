@@ -18,3 +18,4 @@ source $DOTFILES/zsh/sdkman.zsh
 source $DOTFILES/zsh/aliases.zsh
 source $DOTFILES/zsh/yarn.zsh
 source $DOTFILES/zsh/rvm.zsh
+source $DOTFILES/zsh/editor.zsh
