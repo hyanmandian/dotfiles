@@ -1,6 +1,6 @@
-sudo su -
-
 # Setup
+apt install -y aptitude
+aptitude install -y curl git libpng-dev zsh filezilla gconf2 gconf-service libappindicator1 apt-transport-https ca-certificates software-properties-common
 
 ## Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -10,12 +10,11 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
+apt-get update
+aptitude install -y docker-ce
+
 curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-Linux-x86_64 -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
-
-apt-get update
-apt-get install -y aptitude
-aptitude install -y git libpng-dev docker-ce curl zsh filezilla gconf2 gconf-service libappindicator1 apt-transport-https ca-certificates software-properties-common
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" && chsh -s `which zsh`
 
