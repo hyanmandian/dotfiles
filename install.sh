@@ -1,4 +1,5 @@
 # Setup
+sudo su -
 apt install -y aptitude
 aptitude install -y curl git libpng-dev zsh filezilla gconf2 gconf-service libappindicator1 apt-transport-https ca-certificates software-properties-common
 
