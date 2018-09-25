@@ -1,7 +1,9 @@
 # Setup
-sudo su -
 apt install -y aptitude
 aptitude install -y curl git libpng-dev zsh filezilla gconf2 gconf-service libappindicator1 apt-transport-https ca-certificates software-properties-common
+
+# ZSH
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" && chsh -s `which zsh`
 
 ## Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -11,13 +13,11 @@ add-apt-repository \
    $(lsb_release -cs) \
    stable"
 
-apt-get update
+aptitude update
 aptitude install -y docker-ce
 
 curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-Linux-x86_64 -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
-
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" && chsh -s `which zsh`
 
 # Fix docker permissions
 groupadd docker
@@ -26,7 +26,6 @@ usermod -aG docker $USER
 # Apps
 snap install vscode --classic
 snap install intellij-idea-community --classic
-snap install heroku --classic
 snap install postman
 
 wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz_5.0.0-beta.18_amd64.deb -O franz.deb
