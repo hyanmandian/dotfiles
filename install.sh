@@ -1,6 +1,6 @@
 # Setup
 apt install -y aptitude
-aptitude install -y curl git libpng-dev zsh filezilla gconf2 gconf-service libappindicator1 apt-transport-https ca-certificates software-properties-common
+aptitude install -y curl htop git libpng-dev zsh filezilla gconf2 gconf-service libappindicator1 apt-transport-https ca-certificates software-properties-common
 
 # ZSH
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" && chsh -s `which zsh`
