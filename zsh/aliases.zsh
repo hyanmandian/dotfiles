@@ -9,3 +9,5 @@ alias mv="mv -v"
 alias rm="rm -vi"
 alias cp="cp -v"
 alias untar='tar -xvf'
+alias clean-node="find -E . -regex '.*(dist|node_modules|yarn.lock|package-lock.json)$' | xargs rm -rf"
+alias code='vscode'
