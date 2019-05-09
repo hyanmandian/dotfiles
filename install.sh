@@ -24,7 +24,7 @@ groupadd docker
 usermod -aG docker $USER
 
 # Apps
-snap install vscode --classic
+snap install code --classic
 snap install intellij-idea-community --classic
 snap install postman
 
