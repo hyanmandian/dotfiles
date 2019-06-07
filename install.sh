@@ -5,7 +5,7 @@ aptitude install -y curl htop git libpng-dev zsh filezilla gconf2 gconf-service 
 # ZSH
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" && chsh -s `which zsh`
 
-## Docker
+# Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 apt-key fingerprint 0EBFCD88
 add-apt-repository \
@@ -32,7 +32,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -
 dpkg -i chrome.deb
 rm chrome.deb
 
-# Languages
+# Programming languages
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh
 nvm install node
 
