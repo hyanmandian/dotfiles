@@ -43,6 +43,8 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 \curl -sSL https://get.rvm.io | bash -s stable
 rvm install ruby
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | zsh
+
 ## Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
