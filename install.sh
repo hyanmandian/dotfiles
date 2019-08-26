@@ -45,11 +45,6 @@ rvm install ruby
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | zsh
 
-## Yarn
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-apt install -y --no-install-recommends yarn
-
 # Link
 rm ~/.zshrc 
 ln -s ~/Code/dotfiles/.zshrc ~/.zshrc
